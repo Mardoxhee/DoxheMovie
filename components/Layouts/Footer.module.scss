@@ -1,0 +1,124 @@
+@import "../../styles/mixins/variables.module.scss";
+.mainContenair {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  background-color: #09133a;
+  width: 100%;
+  height: auto;
+  padding-bottom: 5px;
+
+  .upSide {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+    .formContenair {
+      margin-top: 20px;
+      height: 40px;
+      display: flex;
+      input {
+        border: none;
+        height: 100%;
+        border-bottom: 1px solid rgb(155, 154, 154);
+        background: #fff;
+        color: rgb(0, 0, 0);
+        outline: none;
+        width: 280px;
+        padding: 0px 10px;
+      }
+      button {
+        height: 100%;
+        border: none;
+        outline: none;
+        padding: 0px 10px;
+        background-color: #18bcef;
+        color: white;
+        font-weight: bold;
+        border-radius: 0px 5px 5px 0px;
+      }
+    }
+
+    input::placeholder {
+      color: rgb(224, 224, 224);
+    }
+  }
+
+  .downSide {
+    display: flex;
+
+    .logoSide {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      height: 100px;
+    }
+  }
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  height: 3rem;
+  width: 100%;
+  background-color: #050c29;
+  font-size: 1.2rem;
+  color: white;
+}
+@media only screen and (max-width: 799px) {
+  .mainContenair {
+    padding: 20px 0px;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .formContenair {
+    margin-top: 20px;
+    height: 30px !important;
+    display: flex;
+    width: 15rem;
+    input {
+      border: none;
+      height: 100%;
+      border-bottom: 1px solid rgb(155, 154, 154);
+      background: #fff;
+      color: rgb(0, 0, 0);
+      outline: none;
+      width: 70%;
+      padding: 0px 10px;
+    }
+    button {
+      height: 100%;
+      border: none;
+      outline: none;
+      padding: 0px 10px;
+      background-color: #18bcef;
+      color: white;
+      font-weight: bold;
+      border-radius: 0px 5px 5px 0px;
+      width: 40%;
+    }
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    height: 2rem;
+    width: 100%;
+    background-color: $primaryColor;
+    font-size: 0.8rem;
+    color: white;
+  }
+}

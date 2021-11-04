@@ -1,0 +1,33 @@
+@import "../../styles//mixins/variables.module.scss";
+.mainWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1rem 5rem;
+  margin-top: 2rem;
+  .category {
+    margin: 0.5rem 1rem;
+    list-style: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid $primaryColor;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      background-color: $primaryColor;
+      cursor: pointer;
+    }
+  }
+}
+@media only screen and (max-width: 799px) {
+  .mainWrapper {
+    padding: 0.2rem 0.5rem;
+    .category {
+      margin: 0.2rem 0.5rem;
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.mainContenair {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../public/Assets/search.jpg");
+  .formWrapper {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      height: 100%;
+      width: 20rem;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      border: 1px black solid;
+      opacity: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+    button {
+      height: 100%;
+      padding: 1rem 4rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #d81a24;
+      color: white;
+      font-size: 1.2rem;
+      margin-left: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

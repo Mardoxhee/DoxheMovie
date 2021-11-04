@@ -1,16 +1,13 @@
 import Head from "../../components/shared/head";
 import Categories from "../../components/shared/categories";
-import styles from "./movie.module.scss";
+import styles from "./index.module.scss";
 import Card from "../../components/shared/Card";
-import Link from "next/link";
-const Movies = ({ title }) => {
+const Series = ({ title }) => {
   return (
     <section className={styles.mainWrapper}>
-      <Head title="Films" />
+      <Head title="Séries" />
       <Categories />
       <div className={styles.cardWrapper}>
-       
-       
         <Card />
         <Card />
         <Card />
@@ -37,4 +34,4 @@ const Movies = ({ title }) => {
   );
 };
 
-export default Movies;
+export default Series;
