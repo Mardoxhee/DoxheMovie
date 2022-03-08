@@ -55,7 +55,10 @@
       margin: 0;
       @include normalTitle;
       color: $NeutralLiteColor;
-      font-size: 0.6rem;
+      font-size: 1rem;
+    }
+    h4 {
+      font-size: 0.5rem;
     }
   }
 }

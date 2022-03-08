@@ -9,7 +9,7 @@ const Cover = ({ dataMovies }) => {
   return (
     <>
       {dataMovies
-        .slice(4, 5)
+        .slice(11, 12)
         .map(({ title, genre_ids, overview, id, backdrop_path }) => {
           const style = {
             backgroundColor: "rgba(0,0,0,0.7)",
