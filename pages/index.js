@@ -1,15 +1,22 @@
-import styles from './index.module.scss'
-import Image from 'next/image'
+import styles from "./index.module.scss";
+import Image from "next/image";
+import logo from "../public/Assets/LOGOMOVIE3.png";
+import Link from "next/link";
 
-const Accueil =()=>{
-  return(
+const Landing = () => {
+  return (
     <section className={styles.mainWrapper}>
       <div className={styles.titleContent}>
-        <h1>Bien Venu sur ma plateforme de Houf</h1>  
-        <Image src="" alt="" />
+        <h1>BIENVENUE SUR </h1>
+        <div className={styles.logoContenair}>
+          <Image className={styles.imgSelf} src={logo} alt="logo_picture" />
+        </div>
 
-     </div>
-     </section>
-  )
-  }
-export default Accueil
+        <Link href="/Accueil">
+          <a>Get Started</a>
+        </Link>
+      </div>
+    </section>
+  );
+};
+export default Landing;

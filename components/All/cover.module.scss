@@ -1,0 +1,146 @@
+@import "../../styles/mixins/mixin_typography.module.scss";
+@import "../../styles/mixins/variables.module.scss";
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
+.cover {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 5rem;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+  // background: linear-gradient(
+  //   360deg,
+  //   rgba(0, 0, 0, 1) 0%,
+  //   rgba(0, 0, 0, 0) 100%
+  // );
+  // background-blend-mode: soft-light;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  .gender {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    border-left: 2px $primaryColor solid;
+    color: $neutralColor;
+    margin: 0;
+  }
+  p {
+    width: 35rem;
+    margin: 0;
+    color: $NeutralLiteColor;
+  }
+  h1 {
+    @include bigestTitle;
+    color: $neutralColor;
+    margin: 0;
+  }
+  h3 {
+    font-weight: 400;
+    margin: 0;
+    margin-top: 1rem;
+
+    span {
+      color: $primaryColor;
+    }
+  }
+}
+.video {
+  width: 30rem !important;
+  height: 20rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    position: relative;
+    left: 50%;
+    font-size: 20rem;
+    color: $neutralColor;
+    z-index: 1;
+  }
+  .picture {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    filter: blur(0.5px);
+  }
+}
+@media only screen and (max-width: 799px) {
+  .cover {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-repeat: no-repeat;
+    padding-top: 10rem;
+    box-sizing: border-box;
+    // background: linear-gradient(
+    //   360deg,
+    //   rgba(0, 0, 0, 1) 0%,
+    //   rgba(0, 0, 0, 0) 100%
+    // );
+    // background-blend-mode: soft-light;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .gender {
+      font-size: 1.3rem;
+      padding-left: 1rem;
+      border-left: 2px $primaryColor solid;
+      color: $neutralColor;
+      margin: 0;
+    }
+    p {
+      width: 15rem;
+      margin: 0;
+      color: $NeutralLiteColor;
+      text-align: center;
+    }
+    h1 {
+      @include bigestTitle;
+      color: $neutralColor;
+      margin: 0;
+      font-size: 4rem;
+    }
+    h3 {
+      font-weight: 400;
+      margin: 0;
+      margin-top: 1rem;
+      display: none;
+
+      span {
+        color: $primaryColor;
+      }
+    }
+  }
+  .video {
+    width: 20rem !important;
+    height: 5rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    .icon {
+      position: relative;
+      left: 50%;
+      font-size: 20rem;
+      color: $neutralColor;
+      z-index: 1;
+      display: none;
+    }
+    .picture {
+      max-width: 100% !important;
+      max-height: 100% !important;
+      display: none;
+    }
+  }
+}

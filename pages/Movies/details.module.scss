@@ -1,0 +1,39 @@
+@import "../../styles//mixins//variables.module.scss";
+.mainContenair {
+  padding: 5rem;
+  width: 100%;
+  height: auto;
+  background: #0a0e17;
+  color: #fff;
+  h2 {
+    color: #fff;
+  }
+  p {
+    color: #fff;
+    width: 50%;
+  }
+  h3 {
+    color: #fff;
+  }
+}
+.videoContenair {
+  width: 100% !important;
+  height: 70vh !important;
+  .video {
+    min-width: 100% !important;
+    min-height: 100% !important;
+  }
+}
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.similar {
+  border-top: 2px solid $primaryColor;
+}
+.iconeItem {
+  display: flex;
+
+  align-items: center;
+}

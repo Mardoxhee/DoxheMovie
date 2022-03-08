@@ -1,0 +1,76 @@
+@import "../../styles//mixins/mixin_typography.module.scss";
+@import "../../styles//mixins/variables.module.scss";
+.wrapper {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+
+  .imgContenair {
+    margin: 0;
+    width: 20rem !important;
+    height: 10rem !important;
+    overflow: hidden;
+    .pict {
+      margin: 0;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+    }
+  }
+  .details {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  h3 {
+    margin: 0;
+    @include normalTitle;
+    color: $NeutralLiteColor;
+    font-size: 1rem;
+  }
+  h4 {
+    margin: 0;
+    color: $NeutralLiteColor;
+    span {
+      color: $primaryColor;
+    }
+  }
+}
+@media only screen and (max-width: 799px) {
+  .wrapper {
+    margin-top: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    h3 {
+      margin: 0;
+      @include normalTitle;
+      color: $NeutralLiteColor;
+      font-size: 1rem;
+    }
+    h4 {
+      font-size: 0.5rem;
+    }
+  }
+}
+.imgContenair {
+  margin: 0;
+  width: 10rem;
+  height: 5rem;
+  .pict {
+    overflow: hidden;
+    margin: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+}
