@@ -1,7 +1,6 @@
 import styles from "./details.module.scss";
 import Card from "../../components/shared/Card";
 import CardHuman from "../../components/shared/CardHuman";
-import { Icon } from "@iconify/react";
 import ReactPlayer from "react-player/youtube";
 import axios from "axios";
 const Details = ({ movieDetail, videoTranding, similarMovies, castigTeam }) => {
@@ -64,8 +63,6 @@ export async function getServerSideProps({ params }) {
   ]);
 
   const video = res[0].data.results;
-
-  console.log("videast", video[0].key);
   const similar = res[1].data.results.slice(0, 8);
   const movieDet = res[2].data;
   const casting = res[3].data.cast.slice(0, 8);
@@ -89,23 +86,5 @@ export async function getServerSideProps({ params }) {
     // revalidate: 10, // In seconds
   };
 }
-
-// export async function getServerSideProps({ params }) {
-//   const moviesdetails = await fetch(
-//     `https://api.themoviedb.org/3/movie/${params.id}?api_key=e2a2f53fe94c336a47e632ddb6b9fc26&language=en-US`
-//   );
-
-//   const moviesR = await moviesdetails.json();
-
-//   return {
-//     props: {
-//       movieDetail: moviesR,
-//     },
-//     // Next.js will attempt to re-generate the page:
-//     // - When a request comes in
-//     // - At most once every 10 seconds
-//     // revalidate: 10, // In seconds
-//   };
-// }
 
 export default Details;

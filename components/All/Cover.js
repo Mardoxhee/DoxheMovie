@@ -23,7 +23,7 @@ const Cover = ({ dataMovies }) => {
             <section className={styles.cover} style={style} key={id}>
               <>
                 <div className={styles.details} key={id}>
-                  <span className={styles.gender}>Best of 2021</span>
+                  <span className={styles.gender}>Best of 2022</span>
                   <h1>{title}</h1>
                   <p>{overview}</p>
                   <h3>
